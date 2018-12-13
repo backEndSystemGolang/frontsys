@@ -1,20 +1,15 @@
-div {
-  color: 'blue';
+.logo {
+  line-height: 90px;
+  padding-left: 0px 20px 0px 0px;
+  background-color: #001529;
 }
-.container {
-  display: flex;
+.logo img {
+  height: 35px;
 }
-.container .nav-left {
-  width: 20%;
-  min-width: 180px;
-  height: calc(100vh);
-  background-color: black;
-}
-.container .main {
-  flex: 1;
-  height: calc(100vh);
-}
-.container .content {
-  position: relative;
-  padding: 20px;
+.logo h1 {
+  color: #ffffff;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
 }

@@ -1,0 +1,20 @@
+div {
+    color: 'blue';
+  }
+  .container {
+    display: flex;
+  }
+  .container .nav-left {
+    width: 20%;
+    min-width: 180px;
+    height: calc(100vh);
+  }
+  .container .main {
+    flex: 1;
+    height: calc(100vh);
+  }
+  .container .content {
+    position: relative;
+    padding: 20px;
+  }
+  
