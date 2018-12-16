@@ -17,7 +17,7 @@ export default class NavLeft extends React.Component{
     renderMenu(){  //事件绑定不适合这个方式，this操作不方便
     }*/
     renderMenu=(data)=>{   
-          console.log(data)
+        //   console.log(data)
           return data.map((item)=>{  //使用map遍历
              if(item.children){ //有children子节点需要再一次遍历
                  return (

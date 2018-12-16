@@ -1,15 +1,15 @@
-.logo {
-  line-height: 90px;
-  padding-left: 0px 20px 0px 0px;
+/** 常用色值 **/
+/** 常用字体大小 **/
+.container .nav-left {
+  min-width: 180px;
+  height: calc(100vh);
   background-color: #001529;
 }
-.logo img {
-  height: 35px;
+.container .main {
+  background-color: #f1f3f5;
+  height: calc(100vh);
 }
-.logo h1 {
-  color: #ffffff;
-  font-size: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 10px;
+.container .content {
+  position: relative;
+  padding: 20px;
 }

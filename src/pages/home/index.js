@@ -5,8 +5,8 @@ export default class Footer extends React.Component{
 
     render(){
         return(
-            <div className="footer">
-                底部Footer底部Footer底部Footer底部Footer 
+            <div className="home-wrap">
+                 欢迎来到后台管理系统
             </div>
         )
     }

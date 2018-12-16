@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^3.11.2",
     "axios": "^0.18.0",
+    "jsonp": "^0.2.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "less-watch-compiler": "^1.13.0",
