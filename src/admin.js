@@ -3,7 +3,7 @@ import { Row,Col } from 'antd';
 import Header from './components/Header/index'
 import Footer from './components/Footer/index'
 import NavLeft from './components/NavLeft/index'
-import Home from './pages/home/index'
+// import Home from './pages/home/index'
 import './css/common.css'
 export default class Admin extends React.Component{  //01.继承才能实现生命周期
     render(){
@@ -16,7 +16,9 @@ export default class Admin extends React.Component{  //01.继承才能实现生�
                    <Header/>
                    <Row className="content">
                      {/* 内容页 */}
-                     <Home/>
+                     {/* 路由 */}
+                     {/* <Home/> */}
+                     {this.props.children}
                    </Row>
                    <Footer/>
                 </Col>
