@@ -1,15 +1,38 @@
-/** 常用色值 **/
-/** 常用字体大小 **/
-.container .nav-left {
-  min-width: 180px;
-  height: calc(100vh);
-  background-color: #001529;
+.header {
+  background-color: #ffffff;
 }
-.container .main {
-  background-color: #f1f3f5;
-  height: calc(100vh);
+.header .header-top {
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  text-align: right;
 }
-.container .content {
-  position: relative;
-  padding: 20px;
+.header .header-top a {
+  margin-left: 40px;
+}
+.header .breadcrumb {
+  line-height: 40px;
+  height: 40px;
+  padding: 0 20px;
+  border-top: 1px solid #f9c700;
+}
+.header .breadcrumb .breadcrumb-title {
+  text-align: center;
+  font-size: 17px;
+}
+.header .breadcrumb .breadcrumb-title:after {
+  position: absolute;
+  content: '';
+  left: 73px;
+  top: 39px;
+  border-top: 9px solid #ffffff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.header .breadcrumb .wheather {
+  text-align: right;
+  font-size: 14px;
+}
+.header .breadcrumb .wheather .date {
+  margin-right: 10px;
 }

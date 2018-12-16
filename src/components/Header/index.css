@@ -1,5 +1,3 @@
-/** 常用色值 **/
-/** 常用字体大小 **/
 .header {
   background-color: #ffffff;
 }
@@ -20,6 +18,16 @@
 }
 .header .breadcrumb .breadcrumb-title {
   text-align: center;
+  font-size: 17px;
+}
+.header .breadcrumb .breadcrumb-title:after {
+  position: absolute;
+  content: '';
+  left: 73px;
+  top: 39px;
+  border-top: 9px solid #ffffff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
 }
 .header .breadcrumb .wheather {
   text-align: right;

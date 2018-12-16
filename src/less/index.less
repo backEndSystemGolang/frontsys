@@ -1,19 +1,40 @@
-//admin.js less
 @import "../css/default.less"; 
-.container{ 
-    .nav-left{
-        // width: 20%;
-        min-width: 180px;
-        height: calc(100vh);
-        background-color:#001529;
+.header{   //头部less
+    background-color: @colorM;
+    .header-top{
+        line-height: 60px;
+        height: 60px;
+        padding: 0 20px;
+        text-align: right;
+        a{
+            margin-left: 40px;
+        }
     }
-    .main{
-        background-color: @colorL;
-        height: calc(100vh);
-        // width: 80%
-    }
-    .content{
-        position: relative;
-        padding: 20px;
+    .breadcrumb{
+        line-height: 40px;
+        height: 40px;
+        padding: 0 20px;
+        border-top:1px solid #f9c700;
+        .breadcrumb-title{
+            text-align: center;
+            font-size: 17px;
+            &:after{ //伪类标签
+                position: absolute;
+                content: '';
+                left:73px;
+                top: 39px;
+                border-top: 9px solid @colorM;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                // background-color: red;
+            }
+        } 
+        .wheather{
+            text-align:right;
+            font-size: 14px;
+            .date{
+                margin-right: 10px;
+            }
+        }
     }
 }
