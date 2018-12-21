@@ -9,6 +9,7 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "less-watch-compiler": "^1.13.0",
+    "moment": "^2.23.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
