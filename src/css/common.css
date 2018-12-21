@@ -1,5 +1,4 @@
-/** 常用色值 **/
-/** 常用字体大小 **/
+/*
 .container .nav-left {
   min-width: 180px;
   height: calc(100vh);
@@ -8,8 +7,49 @@
 .container .main {
   background-color: #f1f3f5;
   height: calc(100vh);
+  overflow: auto;
 }
 .container .content {
   position: relative;
   padding: 20px;
 }
+*/
+  /*设置main 自动滚动：当内容达到一定高度自动添加滚动*/
+
+  ul,
+  li {
+    list-style: none;
+  }
+  .clearfix::after {
+    content: ' ';
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+  .container .nav-left {
+    background-color: #001529;
+    color: #ffffff;
+    height: calc(100vh);
+  }
+  .container .main {
+    height: calc(100vh);
+    overflow: auto;
+    background-color: #f1f3f5;
+  }
+  .container .content {
+    position: relative;
+    padding: 20px;
+  }
+  .content-wrap {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+  }
+  .content-wrap .ant-table-wrapper {
+    margin-left: -1px;
+    margin-right: -2px;
+  }
+  .ant-card button {
+    margin-right: 10px;
+  }
+  

@@ -1,40 +1,45 @@
-@import "../css/default.less"; 
-.header{   //头部less
-    background-color: @colorM;
-    .header-top{
-        line-height: 60px;
-        height: 60px;
-        padding: 0 20px;
-        text-align: right;
-        a{
-            margin-left: 40px;
-        }
+@import '../css/default.less';
+// @import './loading.less';
+ul,li{
+    list-style: none;
+}
+.clearfix{
+    &::after{
+        content:' ';
+        clear:both;
+        display: block;
+        visibility: hidden;
     }
-    .breadcrumb{
-        line-height: 40px;
-        height: 40px;
-        padding: 0 20px;
-        border-top:1px solid #f9c700;
-        .breadcrumb-title{
-            text-align: center;
-            font-size: 17px;
-            &:after{ //伪类标签
-                position: absolute;
-                content: '';
-                left:73px;
-                top: 39px;
-                border-top: 9px solid @colorM;
-                border-left: 12px solid transparent;
-                border-right: 12px solid transparent;
-                // background-color: red;
-            }
-        } 
-        .wheather{
-            text-align:right;
-            font-size: 14px;
-            .date{
-                margin-right: 10px;
-            }
-        }
+}
+.container{
+    .nav-left{
+        background-color:#001529;
+        color: #ffffff;
+        height: calc(100vh);
+    }
+    .main{
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto;
+        background-color: @colorL;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
+
+.content-wrap{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper{
+        margin-left: -1px;
+        margin-right: -2px;
+    }
+}
+.ant-card{
+    button{
+        margin-right: 10px;
     }
 }
