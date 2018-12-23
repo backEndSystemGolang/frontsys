@@ -25,7 +25,7 @@ export default class Gallery extends React.Component{
             <Card
                 style={{marginBottom:10}}
                 // 使用箭头函数把地址传过去
-                cover={<img src={'/gallery/'+item} onClick={()=>this.openGallery(item)}/>}>
+                cover={<img src={'/gallery/'+item} alt="详情" onClick={()=>this.openGallery(item)}/>}>
                 <Card.Meta
                     title="React Admin"
                     description="I Love Imooc"

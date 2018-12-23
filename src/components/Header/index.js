@@ -28,7 +28,7 @@ export default class Header extends React.Component{
 
         }).then((res)=>{  //promis接收参数，通过 .then的参数
             if(res.status==="1"){
-                console.log(res.lives)
+                // console.log(res.lives)
                 /**
                 adcode: "441300"
                 city: "惠州市"
@@ -41,8 +41,8 @@ export default class Header extends React.Component{
                 windpower: "5" 
                  * */
                 let data = res.lives;
-                console.log(data)
-                console.log(data[0].weather)
+                // console.log(data)
+                // console.log(data[0].weather)
                 this.setState({
                     weather:data[0].weather,
                     city:data[0].city,

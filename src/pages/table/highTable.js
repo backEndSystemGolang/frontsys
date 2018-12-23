@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Table, Modal, Button, message, Badge } from 'antd';
 import axios from './../../axios/index'
-import Utils from './../../utils/utils';
+// import Utils from './../../utils/utils';
 export default class BasicTable extends React.Component {
 
     state = {
@@ -18,7 +18,8 @@ export default class BasicTable extends React.Component {
     request = () => {
         let _this = this;
         axios.ajax({
-            url: '/table/high/list',
+            // url: '/table/high/list',
+            url:'/table/list',
             data: {
                 params: {
                     page: this.params.page

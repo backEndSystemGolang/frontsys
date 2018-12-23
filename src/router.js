@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Link, Switch} from 'react-router-dom'
+import { HashRouter, Route, Switch} from 'react-router-dom'
 import App from './App.js'
 import Login from './pages/login/login.js'
 import Admin from './admin'
@@ -17,6 +17,7 @@ import FormLogin from './pages/form/login'
 import FormRegister from './pages/form/register'
 
 import BasicTable from './pages/table/basicTable'
+import HighTable from './pages/table/highTable'
 export default class IRouter extends React.Component{
 
     render(){
@@ -44,6 +45,7 @@ export default class IRouter extends React.Component{
                             <Route path="/form/reg" component={FormRegister} />
 
                             <Route path="/table/basic" component={BasicTable} />
+                            <Route path="/table/high" component={HighTable} />
                             <Route component={NoMatch} />
                            </Switch>                   
                        </Admin>

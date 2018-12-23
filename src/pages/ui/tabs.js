@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, Tabs, message, Icon } from 'antd'
+import { Card, Tabs, message, Icon } from 'antd'
 import './ui.less'
 const TabPane = Tabs.TabPane;
 export default class Buttons extends React.Component {
